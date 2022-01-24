@@ -1,10 +1,9 @@
-N = int(input())
-arr = list(map(int, input().split()))
-
-a=1
-for i in arr:
-    if a < i:
-        break
-    a += i
-    
-print(a)
+arr = input()
+cnt = 0
+a = arr[-1]
+for i in range(len(arr)):
+    if a != arr[i]:
+        cnt +=1
+    a = arr[i]
+print(cnt//2)
+        
