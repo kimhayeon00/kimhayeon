@@ -1,3 +1,4 @@
+# 정확성 42.9점, 효율성 0점
 def solution(food_times, k):
     if k >= sum(food_times):
         return -1
